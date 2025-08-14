@@ -20,33 +20,37 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
+    <div className="min-h-screen bg-background relative overflow-hidden max-w-[100vw] flex flex-col">
       <FloatingParticles />
       
-      <AnimatePresence mode="wait">
-        {currentSection === 'hero' && (
-          <HeroSection key="hero" onSectionChange={handleSectionChange} />
-        )}
-        {currentSection === 'about' && (
-          <AboutSection key="about" onBack={handleBack} />
-        )}
-        {currentSection === 'experience' && (
-          <ExperienceSection key="experience" onBack={handleBack} />
-        )}
-        {currentSection === 'projects' && (
-          <ProjectsSection key="projects" onBack={handleBack} />
-        )}
-        {currentSection === 'skills' && (
-          <SkillsSection key="skills" onBack={handleBack} />
-        )}
-        {currentSection === 'contact' && (
-          <ContactSection key="contact" onBack={handleBack} />
-        )}
-      </AnimatePresence>
+      <div className="flex-grow">
+        <AnimatePresence mode="wait">
+          {currentSection === 'hero' && (
+            <HeroSection key="hero" onSectionChange={handleSectionChange} />
+          )}
+          {currentSection === 'about' && (
+            <AboutSection key="about" onBack={handleBack} />
+          )}
+          {currentSection === 'experience' && (
+            <ExperienceSection key="experience" onBack={handleBack} />
+          )}
+          {currentSection === 'projects' && (
+            <ProjectsSection key="projects" onBack={handleBack} />
+          )}
+          {currentSection === 'skills' && (
+            <SkillsSection key="skills" onBack={handleBack} />
+          )}
+          {currentSection === 'contact' && (
+            <ContactSection key="contact" onBack={handleBack} />
+          )}
+        </AnimatePresence>
+      </div>
 
       {/* Footer */}
-      <footer className="fixed bottom-4 left-1/2 transform -translate-x-1/2 text-xs text-muted-foreground z-10">
-        © 2024 Sanjay P • Built with React, TailwindCSS, Framer Motion
+      <footer className="w-full text-center py-2 mt-auto text-[10px] md:text-xs text-muted-foreground border-t border-border/30 bg-background/70 backdrop-blur-sm">
+        <div className="container mx-auto">
+          © {new Date().getFullYear()} Sanjay P • Built with React, TailwindCSS, Framer Motion
+        </div>
       </footer>
     </div>
   );

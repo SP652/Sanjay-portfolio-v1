@@ -17,23 +17,30 @@ const ContactSection = ({ onBack }: ContactSectionProps) => {
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/sanjayp",
-      href: "https://github.com/sanjayp",
+      value: "github.com/SP652",
+      href: "https://github.com/SP652",
       description: "Check out my code"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/sanjayp",
-      href: "https://linkedin.com/in/sanjayp",
+      value: "LinkedIn",
+      href: "https://www.linkedin.com/in/sanjay-p-1211b4219",
       description: "Professional network"
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+91 8073401099",
+      href: "tel:+918073401099",
+      description: "For urgent inquiries"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Bengaluru, Karnataka",
       href: "#",
-      description: "Available for remote work"
+      description: "Available for on-site and remote work"
     }
   ];
 
@@ -43,7 +50,7 @@ const ContactSection = ({ onBack }: ContactSectionProps) => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen flex items-center justify-center px-4"
+      className="min-h-screen flex items-center justify-center px-4 section-container"
     >
       <div className="glass-panel p-8 md:p-12 max-w-4xl w-full">
         <div className="flex items-center mb-8">
@@ -64,11 +71,11 @@ const ContactSection = ({ onBack }: ContactSectionProps) => {
           className="text-center mb-8"
         >
           <p className="text-lg text-muted-foreground mb-6">
-            Ready to collaborate on your next AI-powered project? Let's connect and build something amazing together.
+            Ready to connect about AI engineering, automation, or software development? Let's explore possibilities together.
           </p>
           
           <motion.a
-            href="mailto:sanjaypsgowda@gmail.com"
+            href="mailto:sanjaypsgowda@gmail.com?subject=Portfolio%20Contact%3A%20Let%27s%20Connect"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="hero-button inline-flex items-center gap-3"
@@ -118,12 +125,13 @@ const ContactSection = ({ onBack }: ContactSectionProps) => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="mt-8 bg-card border border-border rounded-xl p-6 text-center"
         >
-          <h3 className="text-lg font-semibold text-primary mb-3">Let's Build Something Great</h3>
+          <h3 className="text-lg font-semibold text-primary mb-3">Let's Build Something Innovative</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            I'm always interested in discussing new opportunities, innovative projects, 
-            and collaborations in AI, backend systems, and test automation. Whether you have 
-            a challenging technical problem to solve or want to explore the possibilities 
-            of AI-driven solutions, I'd love to hear from you.
+            I'm excited about opportunities in AI-focused engineering, test automation, and 
+            multi-agent orchestration. Whether you're looking to enhance your testing frameworks, 
+            build real-time applications, or explore AI integration for workflow automation, 
+            I'd be delighted to discuss how my experience at Cisco and passion for innovative 
+            solutions can contribute to your projects.
           </p>
         </motion.div>
 

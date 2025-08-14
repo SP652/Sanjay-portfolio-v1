@@ -8,51 +8,19 @@ interface ProjectsSectionProps {
 const ProjectsSection = ({ onBack }: ProjectsSectionProps) => {
   const projects = [
     {
-      title: "AI Agent Orchestrator",
-      description: "Multi-agent system for complex workflow automation with natural language processing and decision-making capabilities.",
-      tech: ["Python", "FastAPI", "LangChain", "Redis", "PostgreSQL", "Docker"],
-      highlights: ["Handles 10M+ daily transactions", "99.9% uptime", "50% cost reduction"],
+      title: "AgentFlow",
+      description: "Multi-Modal Agentic AI Orchestration Platform that enables orchestrating autonomous AI agents with advanced workflow automation and multi-step reasoning.",
+      tech: ["n8n", "LangChain", "OpenAI GPT-4", "Python FastAPI", "React", "Docker"],
+      highlights: ["Modular platform", "Dynamic agent coordination", "Enterprise-ready infrastructure"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Cloud Test Automation Platform",
-      description: "Intelligent testing framework that uses AI to generate, execute, and analyze test cases across multiple environments.",
-      tech: ["Java", "Selenium", "AWS", "Jenkins", "TestNG", "Machine Learning"],
-      highlights: ["85% reduction in manual testing", "Cross-browser automation", "Predictive failure analysis"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Real-time Data Processing Engine",
-      description: "High-performance data pipeline for processing streaming data with real-time analytics and anomaly detection.",
-      tech: ["Node.js", "Apache Kafka", "MongoDB", "InfluxDB", "Grafana", "TensorFlow"],
-      highlights: ["2TB+ daily processing", "Sub-second latency", "Real-time alerting"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Microservices Architecture Framework",
-      description: "Comprehensive framework for building scalable microservices with built-in monitoring, logging, and security.",
-      tech: ["Spring Boot", "Kubernetes", "Istio", "Prometheus", "ELK Stack", "OAuth2"],
-      highlights: ["Auto-scaling capabilities", "Service mesh integration", "Zero-downtime deployments"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "ML Model Deployment Platform",
-      description: "End-to-end platform for training, versioning, and deploying machine learning models at scale.",
-      tech: ["Python", "MLflow", "Kubeflow", "PyTorch", "AWS SageMaker", "Terraform"],
-      highlights: ["Model versioning", "A/B testing", "Auto-rollback capabilities"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "DevOps Automation Suite",
-      description: "Complete DevOps toolkit with CI/CD pipelines, infrastructure as code, and automated monitoring.",
-      tech: ["GitHub Actions", "Terraform", "Ansible", "Helm", "Datadog", "Vault"],
-      highlights: ["60% faster deployments", "Infrastructure automation", "Security compliance"],
-      github: "#",
+      title: "ConvoChat",
+      description: "Real-Time Communication Platform with WebSocket-based messaging, user authentication, persistent messaging, and integrated AI features.",
+      tech: ["MERN Stack", "Socket.IO", "Redis", "OpenAI API", "Docker"],
+      highlights: ["Real-time messaging", "Scalable backend", "Responsive front-end"],
+      github: "https://github.com/SP652/ConvoChat",
       demo: "#"
     }
   ];
@@ -63,7 +31,7 @@ const ProjectsSection = ({ onBack }: ProjectsSectionProps) => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen flex items-center justify-center px-4 py-8"
+      className="min-h-screen flex items-center justify-center px-4 py-8 section-container"
     >
       <div className="glass-panel p-8 md:p-12 max-w-7xl w-full">
         <div className="flex items-center mb-8">

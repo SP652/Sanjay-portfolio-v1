@@ -12,7 +12,7 @@ const AboutSection = ({ onBack }: AboutSectionProps) => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen flex items-center justify-center px-4"
+      className="min-h-screen flex items-center justify-center px-4 section-container"
     >
       <div className="glass-panel p-8 md:p-12 max-w-4xl w-full">
         <div className="flex items-center mb-8">
@@ -33,44 +33,42 @@ const AboutSection = ({ onBack }: AboutSectionProps) => {
           className="space-y-6 text-lg leading-relaxed"
         >
           <p className="text-foreground">
-            As an AI-focused Software Engineer with expertise in multi-agent orchestration and backend systems, 
-            I specialize in building intelligent, scalable solutions that bridge the gap between cutting-edge AI 
-            technologies and robust software architecture.
+            AI-focused Software Engineer skilled in multi-agent orchestration, scalable backend systems, and test automation.
+            Delivers production-grade solutions with modern frameworks (LangChain, n8n, FastAPI, Docker) and collaborates
+            effectively in Agile teams.
           </p>
           
           <p className="text-muted-foreground">
-            My experience spans across developing sophisticated test automation frameworks, implementing 
-            cloud-native architectures, and orchestrating complex AI agent workflows. I have a proven track 
-            record of delivering high-performance systems that can handle enterprise-scale demands while 
-            maintaining code quality and system reliability.
+            At Cisco Systems, I architected robust automation frameworks using Playwright.js and Robot Framework, 
+            achieving 95% test coverage and reducing manual effort by 60%. I engineered multi-modal test orchestration, 
+            accelerating regression cycles from 3 days to 6 hours with 99.8% reliability.
           </p>
           
           <p className="text-muted-foreground">
-            With a deep understanding of modern development practices, I've successfully architected and 
-            implemented solutions using technologies like Python, Java, Node.js, and various cloud platforms. 
-            My passion for AI and machine learning drives me to continuously explore new ways to integrate 
-            intelligent automation into traditional software systems.
+            I've led cross-functional teams for CCMP TPSD triage, developed ML-powered applications including recommendation 
+            engines and real-time chat platforms with WebSocket optimization, and spearheaded AI integration research for 
+            workflow automation, contributing strategies for 30% operational overhead reduction.
           </p>
 
           <div className="bg-card border border-border rounded-lg p-6 mt-8">
             <h3 className="text-xl font-semibold text-primary mb-4">Core Expertise</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-muted-foreground">
               <div>
-                <h4 className="font-medium text-foreground mb-2">AI & Automation</h4>
+                <h4 className="font-medium text-foreground mb-2">Tech Stack</h4>
                 <ul className="space-y-1 text-sm">
-                  <li>• Multi-Agent System Design</li>
-                  <li>• AI Workflow Orchestration</li>
-                  <li>• Machine Learning Integration</li>
-                  <li>• Intelligent Test Automation</li>
+                  <li>• Python, Java, JavaScript, SQL</li>
+                  <li>• React, Node.js, Express, FastAPI</li>
+                  <li>• AWS (Bedrock, Lambda, EC2)</li>
+                  <li>• MongoDB, MySQL, Redis, Pinecone</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium text-foreground mb-2">Backend Systems</h4>
+                <h4 className="font-medium text-foreground mb-2">AI & Automation</h4>
                 <ul className="space-y-1 text-sm">
-                  <li>• Scalable Architecture Design</li>
-                  <li>• Cloud-Native Development</li>
-                  <li>• API Design & Implementation</li>
-                  <li>• Performance Optimization</li>
+                  <li>• LangChain, n8n, OpenAI APIs</li>
+                  <li>• TensorFlow, scikit-learn, spaCy</li>
+                  <li>• Playwright.js, Robot Framework</li>
+                  <li>• Git, CI/CD, Jenkins, Docker</li>
                 </ul>
               </div>
             </div>

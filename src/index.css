@@ -161,4 +161,9 @@
   .section-transition {
     @apply transition-all duration-500 ease-out;
   }
+  
+  /* Ensure content is properly spaced from footer */
+  .section-container {
+    @apply pb-14;
+  }
 }

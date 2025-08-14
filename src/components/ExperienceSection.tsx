@@ -8,39 +8,17 @@ interface ExperienceSectionProps {
 const ExperienceSection = ({ onBack }: ExperienceSectionProps) => {
   const experiences = [
     {
-      title: "Senior AI Software Engineer",
-      company: "TechNova Solutions",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
+      title: "Software Engineer Trainee",
+      company: "Cisco Systems",
+      period: "Aug 2024 - Present",
+      location: "Bangalore",
       achievements: [
-        "Led development of multi-agent orchestration system handling 10M+ daily transactions",
-        "Implemented AI-driven test automation reducing manual testing time by 85%",
-        "Architected microservices infrastructure supporting 99.9% uptime",
-        "Mentored team of 6 engineers in AI/ML best practices and system design"
-      ]
-    },
-    {
-      title: "Backend Systems Engineer",
-      company: "DataFlow Inc",
-      period: "2020 - 2022",
-      location: "Austin, TX",
-      achievements: [
-        "Built scalable data processing pipelines handling 2TB+ daily data volume",
-        "Optimized database performance resulting in 40% query time reduction",
-        "Developed RESTful APIs serving 1M+ requests per day",
-        "Implemented comprehensive testing framework with 95% code coverage"
-      ]
-    },
-    {
-      title: "Software Engineer",
-      company: "CloudTech Innovations",
-      period: "2018 - 2020",
-      location: "Seattle, WA",
-      achievements: [
-        "Developed cloud-native applications using AWS and Docker",
-        "Created automated deployment pipelines reducing release time by 60%",
-        "Collaborated on machine learning model integration for real-time predictions",
-        "Contributed to open-source projects with 500+ GitHub stars"
+        "Architected robust automation frameworks using Playwright.js and Robot Framework, achieving 95% test coverage and reducing manual effort by 60%",
+        "Engineered multi-modal test orchestration, accelerating regression cycles from 3 days to 6 hours with 99.8% reliability",
+        "Led cross-functional team for CCMP TPSD triage, ensuring on-time delivery and streamlining bug resolution in major product releases",
+        "Developed ML-powered applications including recommendation engines and real-time chat platforms with WebSocket optimization",
+        "Spearheaded AI integration research for workflow automation, contributing strategies for 30% operational overhead reduction",
+        "Leveraged AI-powered developer tools Cursor and Windsurf to streamline bug resolution and automate test generation"
       ]
     }
   ];
@@ -51,7 +29,7 @@ const ExperienceSection = ({ onBack }: ExperienceSectionProps) => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen flex items-center justify-center px-4 py-8"
+      className="min-h-screen flex items-center justify-center px-4 py-8 section-container"
     >
       <div className="glass-panel p-8 md:p-12 max-w-6xl w-full">
         <div className="flex items-center mb-8">

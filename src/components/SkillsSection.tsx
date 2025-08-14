@@ -9,35 +9,27 @@ const SkillsSection = ({ onBack }: SkillsSectionProps) => {
   const skillCategories = [
     {
       category: "Programming Languages",
-      skills: ["Python", "Java", "JavaScript", "TypeScript", "Go", "Rust", "C++", "SQL"]
+      skills: ["Python", "Java", "JavaScript", "SQL"]
     },
     {
-      category: "AI/ML Frameworks",
-      skills: ["TensorFlow", "PyTorch", "LangChain", "Hugging Face", "OpenAI API", "Scikit-learn", "Pandas", "NumPy"]
+      category: "Frameworks",
+      skills: ["React", "Node.js", "Express", "Playwright.js", "Robot Framework", "LangChain", "n8n", "FastAPI"]
     },
     {
-      category: "Backend Technologies",
-      skills: ["Node.js", "FastAPI", "Spring Boot", "Django", "Express.js", "GraphQL", "REST APIs", "gRPC"]
+      category: "Cloud/AI",
+      skills: ["AWS Bedrock", "AWS Lambda", "AWS EC2", "OpenAI API", "LangChain", "n8n"]
     },
     {
-      category: "Cloud & Infrastructure",
-      skills: ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform", "Ansible", "Serverless"]
+      category: "ML/Analytics",
+      skills: ["TensorFlow", "scikit-learn", "spaCy", "Deep Learning", "NLP"]
     },
     {
       category: "Databases",
-      skills: ["PostgreSQL", "MongoDB", "Redis", "Elasticsearch", "InfluxDB", "Neo4j", "DynamoDB", "Cassandra"]
+      skills: ["MongoDB", "MySQL", "Redis", "Pinecone"]
     },
     {
-      category: "DevOps & Tools",
-      skills: ["GitHub Actions", "Jenkins", "GitLab CI", "Helm", "Prometheus", "Grafana", "ELK Stack", "Vault"]
-    },
-    {
-      category: "Testing & Quality",
-      skills: ["Selenium", "Jest", "PyTest", "TestNG", "Cypress", "JMeter", "SonarQube", "Postman"]
-    },
-    {
-      category: "Message Queues",
-      skills: ["Apache Kafka", "RabbitMQ", "Amazon SQS", "Redis Pub/Sub", "Apache Pulsar", "NATS"]
+      category: "DevOps/Tools",
+      skills: ["Git", "CI/CD", "Jenkins", "Docker", "Cursor", "Windsurf"]
     }
   ];
 
@@ -47,7 +39,7 @@ const SkillsSection = ({ onBack }: SkillsSectionProps) => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen flex items-center justify-center px-4 py-8"
+      className="min-h-screen flex items-center justify-center px-4 py-8 section-container"
     >
       <div className="glass-panel p-8 md:p-12 max-w-6xl w-full">
         <div className="flex items-center mb-8">
@@ -107,19 +99,16 @@ const SkillsSection = ({ onBack }: SkillsSectionProps) => {
             <div>
               <h4 className="font-semibold text-foreground mb-2">Certifications</h4>
               <ul className="space-y-1 text-sm">
-                <li>• AWS Solutions Architect Professional</li>
-                <li>• Google Cloud Professional ML Engineer</li>
-                <li>• Kubernetes Certified Application Developer</li>
-                <li>• MongoDB Certified Developer</li>
+                <li>• Cisco CYBEROPS Associate (Planned – August 2025)</li>
+                <li>• Agile & Scrum Fundamentals (Completed, Cisco Internal)</li>
+                <li>• Full-Stack MERN Bootcamp (Completed, Cisco Internal)</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-2">Education</h4>
               <ul className="space-y-1 text-sm">
-                <li>• M.S. Computer Science - Stanford University</li>
-                <li>• B.S. Software Engineering - UC Berkeley</li>
-                <li>• AI/ML Specialization - Coursera</li>
-                <li>• Advanced System Design - MIT</li>
+                <li>• B.E., Computer Science Engineering - Visvesvaraya Technological University</li>
+                <li>• CGPA: 8.1/10.0 - July 2023</li>
               </ul>
             </div>
           </div>

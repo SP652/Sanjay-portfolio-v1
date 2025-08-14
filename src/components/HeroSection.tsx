@@ -18,7 +18,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="min-h-screen flex items-center justify-center px-4"
+      className="min-h-screen flex items-center justify-center px-4 section-container"
     >
       <div className="glass-panel p-8 md:p-12 max-w-2xl w-full text-center">
         <motion.div
@@ -28,7 +28,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
           className="mb-8"
         >
           <img
-            src="/avatar.jpg"
+            src="/ProfilePic.jpeg"
             alt="Sanjay P"
             className="neon-avatar w-32 h-32 md:w-40 md:h-40 mx-auto object-cover"
           />
@@ -49,7 +49,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl mx-auto"
         >
-          AI-focused Software Engineer | Multi-Agent Orchestration | Backend Systems | Test Automation
+          Software Engineer Trainee at Cisco Systems | AI/ML | Multi-Agent Orchestration | Test Automation
         </motion.p>
 
         <motion.div
@@ -80,7 +80,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
           transition={{ duration: 0.6, delay: 1.4 }}
           className="mt-8 text-sm text-muted-foreground"
         >
-          Select a section to begin
+          Select a section to explore
         </motion.div>
       </div>
     </motion.div>
