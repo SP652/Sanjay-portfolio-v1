@@ -25,7 +25,7 @@ const ContactSection = ({ onBack }: ContactSectionProps) => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "LinkedIn",
-      href: "https://www.linkedin.com/in/sanjay-p-1211b4219",
+      href: "https://www.linkedin.com/in/sanjay-p-43a9951b9/",
       description: "Professional network"
     },
     {
